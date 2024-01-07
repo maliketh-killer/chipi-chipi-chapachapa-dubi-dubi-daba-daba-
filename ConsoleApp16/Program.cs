@@ -1,59 +1,45 @@
-﻿Console.WriteLine("summing? deviding? timing?? deviding 2????");
-string a = Console.ReadLine();
-if (a== "summing")
+﻿int number1 = int.Parse(Console.ReadLine());
+string znak = Console.ReadLine();
+int number2 = int.Parse(Console.ReadLine());
+if (znak== "+")
 {
-    sum();
+    sum(number1, number2);
 }
-else if(a == "deviding")
+else if(znak == "-")
 {
-    devide();
+    devide(number1, number2);
 }
-else if(a == "timing")
+else if(znak == "*")
 {
-    times();
+    times(number1, number2);
 }
-else if(a == "deviding 2")
+else if(znak == "/")
 {
-    devide2();
+    devide2(number1, number2) ;
 }
 else
 {
     Console.WriteLine("try again");
 }
-static void sum()
+static void sum(double n1, double n2)
 {
-    Console.WriteLine("enter num1: ");
-    int num1 = int.Parse(Console.ReadLine());
-    Console.WriteLine("enter num2: ");
-    int num2 = int.Parse(Console.ReadLine());
-    int sum = num1 + num2;
+    int sum = (int)(n1 + n2);
     Console.WriteLine(sum);
 }
-static void devide()
+static void devide(double n1, double n2)
 {
-    Console.WriteLine("enter num1: ");
-    int num1 = int.Parse(Console.ReadLine());
-    Console.WriteLine("enter num2: ");
-    int num2 = int.Parse(Console.ReadLine());
-    int devide = num1 - num2;
+    int devide = (int)(n1 - n2);
     Console.WriteLine(devide);
 }
-static void times()
+static void times(double n1, double n2)
 {
-    Console.WriteLine("enter num1: ");
-    int num1 = int.Parse(Console.ReadLine());
-    Console.WriteLine("enter num2: ");
-    int num2 = int.Parse(Console.ReadLine());
-    int sum = num1 * num2;
+   
+    int sum = (int)(n1 * n2);
     Console.WriteLine(sum);
 }
-static void devide2()
+static void devide2(double n1, double n2)
 {
-    Console.WriteLine("enter num1: ");
-    int num1 = int.Parse(Console.ReadLine());
-    Console.WriteLine("enter num2: ");
-    int num2 = int.Parse(Console.ReadLine());
-    int sum = num1 / num2;
-    Console.WriteLine(sum);
+   int devide2 = (int)(n1 / n2);
+    Console.WriteLine(devide2);
 }
 Console.WriteLine("hubav den");
