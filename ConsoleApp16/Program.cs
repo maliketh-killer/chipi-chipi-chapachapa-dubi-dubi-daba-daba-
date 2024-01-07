@@ -1,12 +1,12 @@
-﻿Console.WriteLine("summing? deviding? timing?? deviding 2????");
+﻿Console.WriteLine("summing? deviding? timing? deviding 2?");
 string a = Console.ReadLine();
 if (a== "summing")
 {
-    sum();
+    add();
 }
 else if(a == "deviding")
 {
-    devide();
+    substract();
 }
 else if(a == "timing")
 {
@@ -14,13 +14,13 @@ else if(a == "timing")
 }
 else if(a == "deviding 2")
 {
-    devide2();
+    devide();
 }
 else
 {
     Console.WriteLine("try again");
 }
-static void sum()
+static void add()
 {
     Console.WriteLine("enter num1: ");
     int num1 = int.Parse(Console.ReadLine());
@@ -29,7 +29,7 @@ static void sum()
     int sum = num1 + num2;
     Console.WriteLine(sum);
 }
-static void devide()
+static void substract()
 {
     Console.WriteLine("enter num1: ");
     int num1 = int.Parse(Console.ReadLine());
@@ -47,7 +47,7 @@ static void times()
     int sum = num1 * num2;
     Console.WriteLine(sum);
 }
-static void devide2()
+static void devide()
 {
     Console.WriteLine("enter num1: ");
     int num1 = int.Parse(Console.ReadLine());
@@ -55,4 +55,5 @@ static void devide2()
     int num2 = int.Parse(Console.ReadLine());
     int sum = num1 / num2;
     Console.WriteLine(sum);
-}
+    }
+Console.WriteLine("nqkva glupost");
